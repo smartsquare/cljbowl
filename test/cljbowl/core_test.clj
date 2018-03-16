@@ -2,15 +2,19 @@
   (:require [clojure.test :refer :all]
             [cljbowl.core :refer :all]))
 
-(deftest a-test
+(deftest fullness
   (testing "nil?"
     (is (thrown? IllegalStateException (full? nil))))
   (testing "full false"
-    (is (not (full? (->Frame [] 0))))
-    (is (not (full? (->Frame [5] 0)))))
+    (is (not (full? [])))
+    (is (not (full? [5]))))
   (testing "full true"    
-    (is (full? (->Frame [0 0] 0)))
-    (is (full? (->Frame [5 0] 5)))
-    (is (full? (->Frame [0 5] 5)))
-    (is (full? (->Frame [5 5] 10)))
-    (is (full? (->Frame [10] 10))))) 
+    (is (full? [0 0]))
+    (is (full? [5 0]))
+    (is (full? [0 5]))
+    (is (full? [5 5]))
+    (is (full? [10]))))
+
+(deftest rolling
+  (testing "empty game"
+    (is (= [1] (roll [[]] 1)))))
