@@ -1,36 +1,17 @@
 # cljbowl
 
-FIXME: description
+Clojure implementation of the Bowling Class-Kata (http://ccd-school.de/coding-dojo/class-katas/bowling/) 
 
-## Installation
-
-Download from http://example.com/FIXME.
 
 ## Usage
 
-FIXME: explanation
 
-    $ java -jar cljbowl-0.1.0-standalone.jar [args]
+    $ lein test
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
